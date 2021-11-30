@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #123456;
+    min-height: 100vh;
+    color: #abcdef;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #111111f2;
+    padding: 20px;
+    z-index: 100;
+}
+
+.name{
+    /* 60% of available space */
+    flex:0.6;
+    font-size: 22px;
+}
+#my-name{
+    flex:0.6;
+    font-size: 39px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.links{
+    flex:0.4;
+    font-size: 22px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+/* a:hover{
+    background-color: #333;
+} */
+.tabs:hover{
+    background-color: #333;
+}
+
+.main-section{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    min-height: 85vh;
+}
+
+/* Projects section */
+.project-image{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#about{
+    background-color: #123456;
+}
+
+#projects{
+    background-color: #111138;
+}
+
+#contact{
+    background-color: #221370;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: 70px;
+
+}
+
+h2{
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+#role{
+    font-weight: bold;
+   color: #000000f2;
+}
+
+.aboutme{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-gap: 75px 55px;
+}
+
+.project-tile{
+    background-color: #234567;
+    border-radius: 3px;
+    transition: transform 0.35s ease-in-out;
+}
+
+.project-tile:hover{
+    transform: scale(1.04);
+    transition: transform 0.35s ease-in-out;
+}
+
+.project-title{
+    font-size: 30px;
+    padding: 20px;
+}
+
+
+.main-contact{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.contact-type{
+    margin:20px 35px ;
+}
+
+h3{
+    font-size: 35px;
+}
+
+#welcome-section{
+    height: 100vh;
+}
+
+footer{
+    background-color: black;
+    height: 30px;
+    padding-top: 10px;
+}
+
+@media(max-width:1000px){
+    .name{
+        flex:0.4;
+    }
+
+    .links{
+        flex:0.6;
+    }
+}
+
+@media(max-width:1100px){
+    .projects-container{
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    }
+}
